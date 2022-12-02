@@ -3,7 +3,7 @@ experimental dapnet repeater software
 
 What is it?
 
-A peace of software which will turn an linux-device in a DAPNET-Repeater. You will need some RX-Hardware which is supported by multimon-ng (e.g. RTL-SDR or hardware-RX with audio-device) and a DAPNET-transmitter (e.g. mmdvm with DAPNETGateway or hardware-TX with Unipager).
+A peace of software which will turn an linux-device in a DAPNET-repeater. You will need some RX-Hardware which is supported by multimon-ng (e.g. RTL-SDR or hardware-RX with audio-device) and a DAPNET-transmitter (e.g. mmdvm with DAPNETGateway or hardware-TX with Unipager).
 
 * dapnet_sock.py will parse and prepare messages decoded by multimon-ng
 * dapnet_dau.py will act as "core" to interact with your transmitter (mmdvm or Unipager)
@@ -11,7 +11,7 @@ A peace of software which will turn an linux-device in a DAPNET-Repeater. You wi
 
 How does it work?
 
-dapnet_sock.py parses the output of multimon-ng ignoring messages with blacklisted ric. The messages are cleaned up and will be pushed to an unix_socket opened by the fake-core dapnet_dau.py.
+dapnet_sock.py parses the output of multimon-ng ignoring messages with blacklisted ric. The messages are cleaned up and will be pushed to an unix_socket opened by the fake-core dapnet_dau.py. See rtl_multimon_sock.sh how to interact with multimon-ng.
 
 dapnet_dau.py is a fake-core and hopely behaves like the original DAPNET-core after you configured it in the script - there is no config-file.
 After starting at cli, it is opening a unix_socket to collect received messages from dapnet_sock.py and will open a tcp-socket to connect one local transmitter.
