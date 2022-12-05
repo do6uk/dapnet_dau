@@ -41,7 +41,7 @@ use_message_pipe = True
 core_ping = 30
 
 # seconds that messages will kept in msg_history - should be 1 cycle of all slots
-msg_blocktime = 100
+msg_blocktime = 103
 
 # enable debugging (more useless information at console ;-)
 debug = False
