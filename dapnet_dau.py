@@ -44,7 +44,7 @@ core_ping = 30
 msg_blocktime = 100
 
 # enable debugging (more useless information at console ;-)
-debug = True
+debug = False
 
 # enable silentmode (mostly no output) can be reached by --silent in cli
 silent = False

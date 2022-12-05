@@ -23,7 +23,7 @@ ric_blacklist = [8,208,224,200,216,2504]
 server_message_socket = '/tmp/dapnet_dau.s'
 
 # enable debugging (more useless information at console ;-)
-debug = True
+debug = False
 
 # enable silentmode (mostly no output) can be reached by --silent in cli
 silent = False
